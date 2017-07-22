@@ -1,0 +1,23 @@
+{
+"name": "friendfinder",
+"version": "1.0.0",
+"description": "Find a friend based on how yall answer the quiz",
+"main": "server.js",
+"scripts": {
+"start": "node server.js"
+},
+"repository": {
+"type": "git",
+"url": "git+https://github.com/apekearo/FriendFinder.git"
+},
+"author": "Anthony Pekearo",
+"license": "ISC",
+"bugs": {
+"url": "https://github.com/apekearo/FriendFinder/issues"
+},
+"homepage": "https://github.com/apekearo/FriendFinder#readme",
+"dependencies": {
+"body-parser": "^1.17.2",
+"express": "^4.15.3"
+}
+}

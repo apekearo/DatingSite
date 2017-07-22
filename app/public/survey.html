@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Survey Questions</h1>
+	</header>
+	<div class="container">
+		<div class="aboutYou">
+			<h2>About You</h2>
+			<label for="name">Name (Required)</label>
+			<input type="text" class="form-control" id="name">
+			<label for="photo">Link to Photo Image (Required)</label>
+			<input type="text" class="form-control" id="photo">
+		</div>
+		<div class="questions">
+			<h2>Question 1</h2>
+				<p>You like to be the center of attention</p>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<select class="form-control" id="q1">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			<h2>Question 2</h2>
+				<p>You enjoy being active and spending time outdoors</p>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<select class="form-control" id="q2">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			<h2>Question 3</h2>
+				<p>You tend to make decisions based on your emotions rather than logic</p>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<select class="form-control" id="q3">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			<h2>Question 4</h2>
+				<p>You like making plans and sticking to those plans</p>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<select class="form-control" id="q4">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			<h2>Question 5</h2>
+				<p>You would rather stay in at night than go out</p>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<select class="form-control" id="q5">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			<h2>Question 6</h2>
+				<p>You find it easy to relate to other peoples' situations and emotions</p>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<select class="form-control" id="q6">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			<h2>Question 7</h2>
+				<p>You would rather eat at a restaurant than cook</p>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<select class="form-control" id="q7">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			<h2>Question 8</h2>
+				<p>You like to play and/or watch sports</p>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<select class="form-control" id="q8">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			<h2>Question 9</h2>
+				<p>You love to watch movies and TV shows</p>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<select class="form-control" id="q9">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			<h2>Question 10</h2>
+				<p>In a discussion, truth should be more important than people’s sensitivities.</p>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<select class="form-control" id="q10">
+								<option>1 (Strongly Disagree)</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5 (Strongly Agree)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+		</div>
+
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="submit">Submit</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Meet your new friend!</h4>
+			      </div>
+			      <div class="modal-body text-center">
+			        <h2 id="friendName">Rufus</h2>
+			        <img src="http://www.lifewithdogs.tv/wp-content/uploads/2015/12/12.16.15-New-Study-Shows-Dogs-Give-Treats-to-Their-Friends1.jpg" alt="dogFriends" id="friendPhoto">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	</div>
+	<!-- Button trigger modal -->
+
+	<footer></footer>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<script type="text/javascript">
+	$("#submit").on("click", function(){
+		event.preventDefault();
+
+		var newFriend = {
+			name: $("#name").val().trim(),
+			photo: $("#photo").val().trim(),
+			scores: [
+			parseInt($("#q1").val()), 
+			parseInt($("#q2").val()), 
+			parseInt($("#q3").val()), 
+			parseInt($("#q4").val()), 
+			parseInt($("#q5").val()), 
+			parseInt($("#q6").val()), 
+			parseInt($("#q7").val()), 
+			parseInt($("#q8").val()), 
+			parseInt($("#q9").val()), 
+			parseInt($("#q10").val())
+			]
+		};
+
+		console.log(newFriend);
+
+		$.post("/api/friends", newFriend, function(data){
+			
+		});
+	})
+</script>
